@@ -13,16 +13,13 @@ import CoreData
 extension NASAAPOD {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<NASAAPOD> {
-        return NSFetchRequest<NASA>(entityName: "NASA")
+        return NSFetchRequest<NASAAPOD>(entityName: "NASAAPOD")
     }
 
-    @NSManaged public var title: String?
-    @NSManaged public var descriptions: String?
-    @NSManaged public var date: String?
-    @NSManaged public var lastUpdateDate: Date?
+    @NSManaged public var titles: String?
+    @NSManaged public var descriptionss: String?
+    @NSManaged public var dates: String?
+    @NSManaged public var lastUpdateDates: Date?
 
 }
 
-extension NASAAPOD : Identifiable {
-
-}

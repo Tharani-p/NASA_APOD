@@ -17,6 +17,11 @@
 		6303F56127BBCAC100C6E455 /* NASA_APODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F56027BBCAC100C6E455 /* NASA_APODTests.swift */; };
 		6303F56B27BBCAC100C6E455 /* NASA_APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F56A27BBCAC100C6E455 /* NASA_APODUITests.swift */; };
 		6303F56D27BBCAC100C6E455 /* NASA_APODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F56C27BBCAC100C6E455 /* NASA_APODUITestsLaunchTests.swift */; };
+		6303F57E27BBCC4700C6E455 /* NASAAPICLIENT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F57D27BBCC4700C6E455 /* NASAAPICLIENT.swift */; };
+		6303F58027BBCCC800C6E455 /* NASAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F57F27BBCCC800C6E455 /* NASAModel.swift */; };
+		6369108B27BBD950001D8611 /* NASA_Table+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369108927BBD950001D8611 /* NASA_Table+CoreDataClass.swift */; };
+		6369108C27BBD950001D8611 /* NASA_Table+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369108A27BBD950001D8611 /* NASA_Table+CoreDataProperties.swift */; };
+		6369108F27BBE037001D8611 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369108E27BBE037001D8611 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		6303F56627BBCAC100C6E455 /* NASA_APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASA_APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6303F56A27BBCAC100C6E455 /* NASA_APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODUITests.swift; sourceTree = "<group>"; };
 		6303F56C27BBCAC100C6E455 /* NASA_APODUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6303F57D27BBCC4700C6E455 /* NASAAPICLIENT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAAPICLIENT.swift; sourceTree = "<group>"; };
+		6303F57F27BBCCC800C6E455 /* NASAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAModel.swift; sourceTree = "<group>"; };
+		6369108927BBD950001D8611 /* NASA_Table+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NASA_Table+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6369108A27BBD950001D8611 /* NASA_Table+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NASA_Table+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6369108E27BBE037001D8611 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 		6303F53A27BBCABF00C6E455 = {
 			isa = PBXGroup;
 			children = (
+				6369108927BBD950001D8611 /* NASA_Table+CoreDataClass.swift */,
+				6369108A27BBD950001D8611 /* NASA_Table+CoreDataProperties.swift */,
 				6303F54527BBCABF00C6E455 /* NASA_APOD */,
 				6303F55F27BBCAC100C6E455 /* NASA_APODTests */,
 				6303F56927BBCAC100C6E455 /* NASA_APODUITests */,
@@ -101,10 +113,13 @@
 		6303F54527BBCABF00C6E455 /* NASA_APOD */ = {
 			isa = PBXGroup;
 			children = (
+				6369108D27BBE027001D8611 /* Utils */,
+				6303F57927BBCAC900C6E455 /* models */,
+				6303F57A27BBCAD100C6E455 /* viewmodels */,
+				6303F57C27BBCAEC00C6E455 /* controllers */,
+				6303F57B27BBCAE200C6E455 /* views */,
 				6303F54627BBCABF00C6E455 /* AppDelegate.swift */,
 				6303F54827BBCABF00C6E455 /* SceneDelegate.swift */,
-				6303F54A27BBCABF00C6E455 /* ViewController.swift */,
-				6303F54C27BBCABF00C6E455 /* Main.storyboard */,
 				6303F55227BBCAC100C6E455 /* Assets.xcassets */,
 				6303F55427BBCAC100C6E455 /* LaunchScreen.storyboard */,
 				6303F55727BBCAC100C6E455 /* Info.plist */,
@@ -128,6 +143,46 @@
 				6303F56C27BBCAC100C6E455 /* NASA_APODUITestsLaunchTests.swift */,
 			);
 			path = NASA_APODUITests;
+			sourceTree = "<group>";
+		};
+		6303F57927BBCAC900C6E455 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6303F57F27BBCCC800C6E455 /* NASAModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		6303F57A27BBCAD100C6E455 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				6303F57D27BBCC4700C6E455 /* NASAAPICLIENT.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		6303F57B27BBCAE200C6E455 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6303F54C27BBCABF00C6E455 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6303F57C27BBCAEC00C6E455 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6303F54A27BBCABF00C6E455 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		6369108D27BBE027001D8611 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6369108E27BBE037001D8611 /* Reachability.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6303F57E27BBCC4700C6E455 /* NASAAPICLIENT.swift in Sources */,
 				6303F55127BBCABF00C6E455 /* NASA_APOD.xcdatamodeld in Sources */,
 				6303F54B27BBCABF00C6E455 /* ViewController.swift in Sources */,
+				6369108C27BBD950001D8611 /* NASA_Table+CoreDataProperties.swift in Sources */,
 				6303F54727BBCABF00C6E455 /* AppDelegate.swift in Sources */,
+				6369108F27BBE037001D8611 /* Reachability.swift in Sources */,
+				6369108B27BBD950001D8611 /* NASA_Table+CoreDataClass.swift in Sources */,
+				6303F58027BBCCC800C6E455 /* NASAModel.swift in Sources */,
 				6303F54927BBCABF00C6E455 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

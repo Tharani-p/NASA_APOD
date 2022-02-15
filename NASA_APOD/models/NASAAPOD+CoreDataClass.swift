@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(NASAAPOD)
-public class NASA: NSManagedObject {
+public class NASAAPOD: NSManagedObject {
 
 }

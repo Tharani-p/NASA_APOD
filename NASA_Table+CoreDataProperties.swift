@@ -20,6 +20,7 @@ extension NASA_Table {
     @NSManaged public var descriptions: String?
     @NSManaged public var lastUpdateDate: Date?
     @NSManaged public var title: String?
+    @NSManaged public var imageData: Data?
 
 }
 
